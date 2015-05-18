@@ -1,0 +1,78 @@
+/* CSS Document */
+
+#wrapper {
+	background:#CCC;
+	padding:10px;
+}
+
+#contents {
+	background:#FFF;
+	padding:10px;
+}
+
+/* form */
+#regist {
+	width:630px;
+	margin:0 auto;
+}
+#regist table {
+	width:100%;
+}
+#regist table th, #regist table td {
+	border-bottom:dotted #999999 2px;
+	padding:12px 0;
+	text-align:left;
+}
+#regist table th {
+	width:200px;
+}
+
+/* form input */
+#regist table input {
+	border:solid 1px #b2b2b2;
+	padding:5px;
+}
+#regist table td label {
+	margin-right:1em;
+}
+#regist table label input {
+	margin-right:3px;
+}
+#regist table #mediaGroup input {
+	border:none;
+	padding:0;
+}
+
+/* error */
+#regist table input.err, #regist table.err input {
+	border:1px solid #f67400;
+	background:#ff9;
+}
+
+/* btn */
+.btn {
+	text-align:center;
+	width:100%;
+	padding-top:30px;
+}
+
+/* alert */
+#alert {
+	width:630;
+	border:3px solid #f67400;
+	color:#f67400;
+	margin:30px auto;
+	padding:15px;
+	background:#ff9;
+	font-weight:bold;
+}
+#alert strong {
+	font-weight:bold;
+}
+
+/* password */
+span.passwordScore {
+	padding:3px 10px;
+	margin:0 0 0 5px;
+	font-size:93%;
+}

@@ -1,0 +1,61 @@
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+}
+html,body {
+    height:100%;
+}
+body {
+	font-family:"メイリオ", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Meiryo, Osaka, sans-serif;
+}
+
+img {
+	border:none;
+	vertical-align:middle;
+}
+a:hover img {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+a:hover {text-decoration:underline;}
+
+ul li {list-style:none;}
+
+table {
+	border-collapse:collapse;
+}
+
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+
+h3 {
+	margin:0 0 10px;
+	font-size:16px;
+	text-align:left;
+    color:#999999;
+    border-bottom:#999999 solid 1px;
+}
+p {
+	padding:10px 0;
+	margin:10px auto;
+	text-align:left;
+	word-wrap:break-word;
+	font-size:14px;
+    color:#999999;
+}
+

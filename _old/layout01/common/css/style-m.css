@@ -1,0 +1,20 @@
+/* CSS Document */
+
+body {background:#CCC;}
+
+#wrapper {
+	width:100%;
+}
+
+#contents {
+	width:62.5%;
+}
+
+#sidebar {
+	width:31.25%;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}

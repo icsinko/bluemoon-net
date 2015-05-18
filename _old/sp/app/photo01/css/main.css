@@ -1,0 +1,8 @@
+/* CSS Document */
+
+#myCanvas{
+	position:absolute;
+	left:0px;
+	top:0px;
+	-webkit-user-select:none;
+}

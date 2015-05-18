@@ -1,0 +1,14 @@
+/* CSS Document */
+
+body{
+	width:320px;
+	height:480px;
+	background-color:#000;
+	background:-webkit-gradient(linear,left top,left bottom,from(#325b2c),color-stop(0.5,#0c2617),to(#1c5817));
+}
+
+#clockImage{
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}

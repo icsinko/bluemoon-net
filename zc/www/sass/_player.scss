@@ -1,0 +1,97 @@
+#rmt-player {
+	$w: 580px;
+	
+	@include box-sizing(border-box);
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-right: 30px;
+	width: percentage(580px/$width);
+	height: 60px;
+	float: left;
+	
+	#rmt-player-cover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60px;
+	}
+	%player-btn {
+		background: none no-repeat center center;
+		cursor: pointer;
+		padding: 5px 8px;
+		position: absolute;
+		text-indent: -9999px;
+		width: 28px;
+		@include user-select(none);
+		&:hover {
+			opacity: 0.7;
+			-ms-filter: "alpha(opacity=70)";
+		}		
+	}
+	#rmt-player-play {
+		@extend %player-btn;
+		top: 0;
+		left: 70px;
+		background-image: url(../img/common/player_btn_play.png);
+		border-left: 1px solid #ddd;
+	}
+	#rmt-player-next {
+		@extend %player-btn;
+		top: 0;
+		left: 115px;
+		background-image: url(../img/common/player_btn_next.png);
+		border-left: 1px solid #ddd;
+	}
+	#rmt-player-mute {
+		@extend %player-btn;
+		top: 0;
+		left: 160px;
+		background-image: url(../img/common/player_btn_mute.png);
+		border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+	#rmt-player-title {
+		position: absolute;
+		top: 40px;
+		left: 70px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: left;
+		white-space: nowrap;
+		width: 65%;
+	}
+	#rmt-player-progress {
+		@include user-select(none);
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 225px;
+		background: url(../img/common/player_progress_bg.png) repeat-x;
+		width: 270px;
+		height: 30px;
+		#rmt-player-progress-handler {
+			@extend %player-btn;
+			background-image: url(../img/common/player_progress_handler.png);
+			top: 0;
+			left: 0;
+			padding: 5px 0;
+			width: 18px;
+		}
+	}
+	#rmt-player-time {
+		position: absolute;
+		top: 0;
+		right: 30px;
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+	}
+	
+	.btn-buy {
+		padding: 5px 15px 3px 34px;
+		position: absolute;
+		bottom: 0;
+		right: 30px;
+	}
+}

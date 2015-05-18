@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header, footer, aside, nav, article, section {  
+    display: block;  
+}
+
+body {
+	font-size: 12px;
+	_font-size: x-small;
+	font-family: 'Helvetica', 'Arial', メイリオ,'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック', sans-serif;
+	line-height: 1.4;
+	text-align:left;
+	margin: 0 auto;
+}
+
+img{
+	border:0;
+}
+
+table,tr,td,th{
+	border:0;
+	border-style:none;
+}
+
+ul{
+	list-style-type:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+a img, img {  
+border:0;
+}
+
+a, a:link, a:visited{
+	text-decoration: none;
+	outline: none;
+}
+a:hover{
+}
+
+html {
+	overflow: hidden;
+}
+
+body{
+	background:#ffffff;
+	color: #000000;
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
+.left{
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	top:0;
+	left:0;
+	position:absolute;
+}
+
+#wrapper ul {
+	height: 100%;
+	overflow: hidden;
+}
+#wrapper ul li.sIndex ul#indexList li img {
+	vertical-align: top;
+}
+#wrapper ul li.sIndex ul#indexList a {
+	position:absolute;
+	z-index:100;
+	background:#ffffff;
+}
+
+.slide {
+	float: left;
+	position: relative;
+	width:100%;
+}
+
+.slide img {
+	display:none;
+}
+
+.credit {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-size:12px;
+}
+
+#header {
+	top: 20px;
+	left: 20px;
+	position: absolute;
+	z-index: 1;
+}
+
+#logo {
+	cursor:pointer;
+}
+
+#logo h1 {
+	margin-bottom: 7px;
+}
+
+#logo h1 img, #logo h2 img{
+}
+
+#photo {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#arrowL {
+	left: 20px;
+	position: absolute;
+	top: 50%;
+	margin: -18px 0 0 0;
+}
+
+#arrowR {
+	right: 20px;
+	position: absolute;
+	top: 50%;
+	margin: -18px 0 0 0;
+}
+
+#arrowL a, #arrowR a {
+	cursor: pointer;
+}
+
+#loader {
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+position: absolute;
+}
+
+#loader img {
+width: 32px;
+height: 32px;
+padding: 5px;
+top: 50%;
+left: 50%;
+margin: -16px 0 0 -16px;
+position: relative;
+}
+
+#indexList {
+	margin:0 auto;
+	text-align:center;
+}
+#indexList li {
+	float:left;
+}
+
+#menu {
+	position:absolute;
+	z-index:9998;
+	top:0;
+	right:-100%;
+	width:100%;
+	height:100%;
+	display:block;
+}
+#menuBtn {
+	position:fixed;
+	right:0;
+	top:0;
+	width:50px;
+	height:50px;
+	z-index:9999;
+	text-indent:-9999px;
+	background:url(../images/icon.png) no-repeat;
+	background-size:200px 200px;
+	-webkit-background-size:200px 200px;
+	-moz-background-size:200px 200px;
+	background-position:0 -110px;
+	cursor:pointer;
+}
+#menuList {
+	position:fixed;
+	right:-160px;
+	top:0;
+	display:block;
+	width:160px;
+	height:100%;
+	background:#000000;
+	opacity:0.8;
+}
+#menuList ul {
+	margin:40px 0 0;
+}
+#menuList li {
+	padding:15px 20px;
+	border-bottom:solid 1px #ffffff;
+}
+#menuList li a {
+	color:#ffffff;
+}
+
+#sns {
+	position:absolute;
+	z-index:99;
+	bottom:20px;
+	left:20px;
+}
+#sns .snsBtnArea {
+	float:left;
+}
+.snsBtn,.storeBtn {
+	float:left;
+	margin:0 10px 0 0;
+}
+.snsBtn a {
+	background:url(../images/icon.png) no-repeat;
+	background-size:128px 128px;
+	-webkit-background-size:128px 128px;
+	-moz-background-size:128px 128px;
+	width:30px;
+	height:30px;
+	text-indent:-9999px;
+	display:block;
+}
+.tw a {
+	background-position:-32px 0;
+}
+.fb a {
+	background-position:0 0;
+}
+.storeBtn a {
+	background:url(../images/icon.png) no-repeat;
+	background-size:128px 128px;
+	-webkit-background-size:128px 128px;
+	-moz-background-size:128px 128px;
+	background-position:0 0;
+	width:30px;
+	height:30px;
+	text-indent:-9999px;
+	display:block;
+}
+
+.slideLink {
+	display:none;
+}

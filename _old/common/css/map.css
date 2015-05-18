@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+#contents .section {
+	clear: both;
+	position: relative;
+	margin-left: 20px;
+	padding: 20px 10px 40px;
+	border-top: 1px solid #c0c0c0;
+	width:800px;
+}
+#contents .section p.more {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#contents .section.half {
+	clear: none;
+	float: left;
+	width: 320px;
+}
+#contents .section h2 {
+	margin-bottom: 1em;
+	margin-left: -13px;
+	padding-left: 13px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3d2808;
+}
+
+/* マップ */
+#contents #gmap {
+	width:800px;
+	height: 500px;
+	background: #eee;
+	border: 1px solid #e1deda;
+}
+
+
+

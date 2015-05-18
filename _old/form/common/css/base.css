@@ -1,0 +1,42 @@
+/* CSS Document */
+
+@charset "UTF-8";
+
+/*=====================================
+* 01.タグ設定
+* 01-01.for RESET
+
+* =====================================*/
+
+/*=====================================
+*
+* 01.タグ設定
+*======================================*/
+
+/*-------------------------------------
+*
+* 01-01.for RESET
+*--------------------------------------*/
+body, div, h1, h2, h3, h4, h5, h6, pre, fieldset, textarea, p, dl, dt, dd,　ins, blockquote, th, td　{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+fieldset, img {
+	border: none;
+}
+
+.red {
+	color:#F00;
+}
+.blue {
+	color:#00F;
+}
+.gray {
+	color:#999;
+}

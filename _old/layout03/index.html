@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery mobile layout</title>
+<link rel="stylesheet" href="../common/css/jquery.mobile-1.2.0.min.css" />
+<script type="application/javascript" src="../common/js/jquery-1.8.2.min.js"></script>
+<script type="application/javascript" src="../common/js/jquery.mobile-1.2.0.min.js"></script>
+</head>
+
+<body>
+<!--1p-->
+<div data-role="page" id="page1">
+	<div data-role="header" data-position="fixed">
+  	<a href="#page1" data-role="button" data-iconpos="notext" data-icon="home">Home</a>
+  	<h1 class="ui-title" tabindex="0" role="heading" aria-level="1">ページ1</h1>
+    <a href="#page2" data-role="button" data-iconpos="notext" data-icon="rbo-call">Call</a>
+  </div>
+  <div data-role="content">
+  	コンテンツ<br />
+    <a href="#page2">2ページ目へ&gt;&gt;</a>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview">
+    	<li>
+      	<a href="#releases">新刊</a>
+        <span class="ui-li-count">4</span>
+      </li>
+    	<li>
+      	<a href="#ranking" data-transition="fade">ランキング</a>
+      </li>
+    	<li>
+      	<a href="../../layout03/news.html" data-transition="flip">お知らせ</a>
+      </li>
+    	<li>
+      	<a href="http://www.facebook.com">Facebook</a>
+      </li>
+    </ul>
+  </div>
+  <div data-role="footer" style="text-align:center">
+  	<h4>フッター</h4>
+  </div>
+</div>
+<!--2p-->
+<div data-role="page" id="page2">
+	<div data-role="header" data-position="fixed">
+  	<a href="#page1" data-role="button" data-iconpos="notext" data-icon="home">Home</a>
+  	<h1 class="ui-title" tabindex="0" role="heading" aria-level="1">ページ2</h1>
+    <a href="#page2" data-role="button" data-iconpos="notext" data-icon="rbo-call">Call</a>
+  </div>
+  <div data-role="content">
+  	コンテンツ<br />
+    <a href="#page1">&lt;&lt;1ページ目へ</a>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview">
+    	<li>
+      	<a href="#releases">Count</a>
+        <span class="ui-li-count">4</span>
+      </li>
+    	<li>
+      	<a href="#ranking" data-transition="fade">Fade</a>
+      </li>
+    	<li>
+      	<a href="../../layout03/news.html" data-transition="flip">Flip</a>
+      </li>
+    	<li>
+      	<a href="http://www.facebook.com">Facebook</a>
+      </li>
+    </ul>
+  </div>
+  <div data-role="footer" style="text-align:center">
+  	<h4>フッター</h4>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* マップ */
+#contents #gmap {
+	width:800px;
+	height: 500px;
+	background: #eee;
+	border: 1px solid #e1deda;
+}

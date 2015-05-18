@@ -1,0 +1,17 @@
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	margin:24px 10px;
+	font-family:"メイリオ", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+img {
+	border:none;
+}
+
+a {text-decoration:none;}

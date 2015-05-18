@@ -1,0 +1,128 @@
+.content-main > div:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    font-size:0;
+}
+
+.content-main {	
+	.article-header {
+		clear: both;
+		margin-bottom: 14px;
+		@media screen and (max-width:$width3) {
+			margin: 20px 0 30px;
+			text-align: center;
+		}
+		.btn-buy {
+			background: url(../img/common/icn_cart_white_big.png) no-repeat 48px 8px #606;
+			@include border-radius(22px);
+			font-size: 138.5%;
+			padding: 6px 58px 6px 72px;
+		}
+		p.tag {
+			background: url(../img/common/icn_tag.png) no-repeat 0 0;
+			display: inline-block;
+			margin-left: 10px;
+			padding-left: 25px;
+			@media screen and (max-width:$width3) {
+				display: none;
+			}
+		}
+	}
+
+	.article-main {
+		float: right;
+		width: percentage(670px / $width);
+		@media screen and (max-width:$width3) {
+			float: none;
+			width: 100%;
+		}
+		
+		.album-cover {
+			float: left;
+			margin: 0 0 20px 20px;
+			width: percentage(200px/640px);
+		}
+		
+		h1 {
+			
+			color: #333;
+			font-family: 'Convergence', sans-serif;
+			font-size: 184.6%;
+			line-height: 120%;
+			margin-bottom: 20px;
+			&.flag {
+				background-position: top right;
+			}
+			@media screen and (max-width:$width3) {
+				font-size: 123.1%;
+				margin: 0 0 20px percentage(280px/640px);
+				&.flag {
+					background-position: top left;
+					background-size: 30px 30px;
+					padding-top: 30px;
+				}
+			}
+
+			.name {
+				color: #666;
+				display: inline-block;
+				margin-top: 5px;
+			}
+		}
+		
+		.playlist {
+			margin-bottom: 40px;
+		}
+		
+	}
+
+	.article-aside {
+		@include box-sizing(border-box);
+		font-size: 92.3%;
+		float: left;
+		margin-bottom: 40px;
+		width: percentage(230px / $width);
+		@media screen and (max-width:$width3) {
+			float: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			width: 100%;
+		}
+		
+		.album {
+			margin-bottom: 20px;
+			.album-cover {
+				margin-bottom: 5px;
+			}
+			.album-info {
+				color: #666;
+				@include all-a(#666);
+			}
+		}
+		
+		.about {
+			border-top: 1px solid #ccc;
+			color: #666;
+			@include all-a(#666);
+			padding-top: 14px;
+			margin-bottom: 20px;
+			text-align: center;
+			
+			h2 {
+				color: #333;
+				font-family: 'Convergence', sans-serif;
+				font-size: 133.3%;
+				line-height: 120%;
+				margin-bottom: 10px;
+				text-align: left;
+			}
+			p {
+				text-align: left;
+			}
+		}
+	}
+
+}

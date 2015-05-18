@@ -1,0 +1,116 @@
+/* CSS Document */
+body {
+  background:#000;
+}
+
+.ui-layout-pane {
+  padding: 20px;
+}
+
+.ui-layout-west {
+  padding: 20px 30px;
+}
+
+.ui-layout-east {
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  -moz-border-radius: 8px 0 0 8px;
+  -webkit-border-radius: 8px 0 0 8px;
+  background-color: #fff;
+}
+
+.ui-layout-south {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.ui-layout-center {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.ui-layout-toggler {
+  background-color: #aaa;
+}
+.ui-layout-toggler .content {
+  text-align: right;
+}
+
+.ui-layout-toggler-east {
+  background-color: transparent;
+}
+
+.ui-layout-resizer-hover {
+  background: #ccc;
+}
+
+.nav-menu li {
+  padding-bottom: 2em;
+}
+
+.account {
+  width: 100%;
+  font-size: 14px;
+}
+.account caption {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+.account thead th {
+  padding: 0.5em;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+.account tbody th {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+  font-weight: bold;
+}
+.account tbody td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: right;
+}
+.account tbody tr:nth-child(odd) {
+  background-color: #e8f2f6;
+}
+.account tbody tr:last-child {
+  border-top: 3px double #ccc;
+  background-color: #ffe3e3;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+#wrapper {
+  position: relative;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.ui-layout-east li {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.ui-layout-south {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+#header h1 {
+	color:#FFF;
+}

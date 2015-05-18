@@ -1,0 +1,36 @@
+body#index {
+	
+	.header-1 {
+		margin-left: 40px;
+		margin-right: 40px;
+		@media screen and (max-width:$width3) {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+	
+	.box-5 .btn-buy {
+		margin-top: 8px;
+	}
+	
+	.content-feature {
+		padding-bottom: 20px;
+		text-align: left;
+		@media screen and (max-width:$width3) {
+			display: none;
+		}
+	}
+	
+	.content-main {
+		@include responsiveBox;
+		background-color: transparent;
+		padding: 0;
+		@media screen and (max-width:$width3) {
+			padding-bottom: 20px;
+		}
+		&> div {
+			width: auto;
+		}
+	}
+	
+}

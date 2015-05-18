@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header, footer, aside, nav, article, section {  
+    display: block;  
+}
+
+body {
+	font-size: 12px;
+	_font-size: x-small;
+	font-family: 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','ＭＳ Ｐゴシック', sans-serif;
+	line-height: 1.4;
+	text-align:left;
+	margin: 0 auto;
+}
+
+img{
+	border:0;
+}
+
+table,tr,td,th{
+	border:0;
+	border-style:none;
+}
+
+ul{
+	list-style-type:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+a img, img {  
+border:0;
+}
+
+a, a:link, a:visited{
+	text-decoration: none;
+	outline: none;
+}
+a:hover{
+}
+

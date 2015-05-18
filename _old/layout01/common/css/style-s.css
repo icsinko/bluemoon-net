@@ -1,0 +1,56 @@
+/* CSS Document */
+
+body {background:#999;}
+
+#wrapper {
+	width:100%;
+	position:relative;
+}
+
+/*header*/
+#header {
+	margin:0 0 15px;
+}
+
+/*contents*/
+#contents {
+	width:100%;
+	float:none;
+}
+#contents h2 {
+	font-size:24px;
+}
+
+/*sidebar*/
+#sidebar {
+	width:100%;
+	float:none;
+}
+
+/*logo*/
+#logo {float:none;}
+
+/*icon menu*/
+#iconmenu {
+	position:absolute;
+	right:8px;
+	bottom:6px;
+	float:none;
+}
+
+/*menu*/
+#menu li a {
+	width:auto;
+	padding:5px 8px;
+}
+
+/*footer*/
+#footer {
+	padding-bottom:60px;
+}
+
+/*img*/
+img {
+	max-width:100%;
+	height:auto;
+}

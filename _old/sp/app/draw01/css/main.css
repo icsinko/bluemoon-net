@@ -1,0 +1,11 @@
+/* CSS Document */
+
+#myCanvas{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:320px;
+	height:480px;
+	background-color:#000;
+	-webkit-user-select:none;
+}

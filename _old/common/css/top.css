@@ -1,0 +1,56 @@
+/* CSS Document */
+
+.slideFrame {
+	overflow:hidden;
+	width:100%;
+}
+.slideCell {
+	display:block;
+	float:left;
+	margin-right:5px;
+}
+/*slider-0*/
+#slider-0.slideFrame{
+	height:150px;
+}
+/*slider-1*/
+#slider-1.slideFrame{
+	position:relative;
+	height:75px;
+	margin:10px 0;
+}
+#slider-1 .slideCtrl{
+	padding-top:30px;
+}
+/*slider-2*/
+#slider-2.slideFrame{
+	height:150px;
+}
+#slider-2 .slideCtrl{
+	padding-top:30px;
+}
+/*slider-3*/
+#slider-3.slideFrame{
+	position:relative;
+	height:75px;
+	margin:10px 0;
+}
+/*コントローラ*/
+.slideCtrl{
+	display:none;
+	position:absolute;
+	top:0;
+	width:90px;
+	height:100%;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	background-color:#333;
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.slideCtrl.left{left:0;}
+.slideCtrl.right{right:0;}

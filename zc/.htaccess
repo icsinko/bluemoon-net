@@ -1,0 +1,13 @@
+#AuthType Basic
+#AuthName "Rag Be Authorization"
+#AuthUserFile /home/ragbe/apache/htdocs/admin.ragbe.com/htadmin/.htpasswd
+#Require user higuchi sawa
+
+#order deny,allow
+#deny from all
+#allow from .paypal.com         # PayPal
+#allow from 173.0.82.126        # PayPal IPN
+#allow from 173.0.82.77         # PayPal IPN
+#allow from 182.171.234.109     # RagBe
+#allow from 119.243.74.200      # LifeSound
+#allow from localhost

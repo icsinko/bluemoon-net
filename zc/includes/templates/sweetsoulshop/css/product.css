@@ -1,0 +1,415 @@
+#cont_detail table#detail_attr {
+	width: 100%;
+	margin: 10px 0;
+}
+
+#cont_detail table#detail_attr tr {
+	width: 100%;
+	line-height: 24px;
+}
+
+#cont_detail table#detail_attr th,
+#cont_detail table#detail_attr td {
+	line-height: 24px;
+	color: #666;
+}
+
+#cont_detail table#detail_attr th{
+	background-color: #e6e4dd;
+	width: 25%;
+	text-align: center;
+}
+
+#cont_detail table#detail_attr td {
+	width: auto;
+	padding: 0 10px;
+}
+
+#cont_detail table#detail_attr tr:first-child {
+	border-bottom: 1px solid #ccc;
+}
+
+#cont_detail table#detail_attr tr:last-child {
+	border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width:480px) {
+	#cont_detail table#detail_attr th {
+		width: 90px;
+	}
+	#cont_detail table#detail_attr td {
+		width: 390px;
+	}
+}
+
+#cont_detail #detail_social {
+position:relative;
+margin:10px 0 8px;
+}
+
+#cont_detail #detail_social .twitter-share-button {
+position:absolute;
+top:0;
+left:110px;
+}
+
+#cont_detail #detail_otherrelease {position:relative;}
+#cont_detail #detail_otherrelease #btn_prev,
+#cont_detail #detail_otherrelease #btn_next {
+position:absolute;
+top: 76px;
+cursor:pointer;
+}
+#cont_detail #detail_otherrelease #btn_prev { left:0; }
+#cont_detail #detail_otherrelease #btn_next { right:0; }
+
+
+.cart_btn_wrap {
+	text-align: center;
+}
+
+.cart_btn {
+margin-bottom:20px;
+}
+
+.sk {font-size:84%;
+margin-bottom:30px;}
+
+.detail_sec {
+	margin-bottom: 30px;
+}
+
+#cont_detail h2 {
+	background: none;
+}
+
+h3 {font-weight: 700}
+
+div#detail_common {
+	position: relative;
+	margin-top:29px;
+}
+
+div#detail_common:after,
+.detail_stuff:after,
+.detail_sec:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    font-size:0;
+}
+
+div.detail_left {
+	margin: 100px 0 20px;
+
+	float: left;
+	width: 49.23%;
+}
+
+div.detail_right {
+	margin: 100px 0 20px;
+
+	float: right;
+	width: 47.6923%;
+}
+
+div.detail_right .num tr {
+	width: 80px;
+}
+
+div.detail_right .num .buy-num,
+div.detail_right .num .buy-num input {
+	width: 50px;
+}
+@media screen and (max-width:768px) {
+	div.detail_left {
+		margin-top: 120px;
+	}
+	
+	div.detail_right {
+		margin-top: 120px;
+	}
+
+}
+
+@media screen and (max-width:480px) {
+	div.detail_left {
+		padding-top: 150px;
+	}
+	div.detail_left,
+	div.detail_right {
+		margin-top: 0;
+		float:none;
+		width: 100%;
+	}		
+}
+
+img#mainimg {
+	margin: 0 auto 10px;
+	width: 100%;
+}
+
+ul.img_sub:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    font-size:0;
+}
+
+ul.img_sub li {
+	float: left;
+	width: 22.2%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-right: 3.7%;
+}
+ul.img_sub li:last-child {
+	margin-right: 0;
+}
+
+ul.line_3 li {
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_gt_black.png) no-repeat 0 4px;
+	padding-left: 10px;
+}
+
+@media screen and (max-width:480px) {
+	ul.img_sub {
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+
+
+/*　　　商品詳細説明内　　*/
+
+dl.product_detail dt {
+	font-size: 84%;
+	font-weight: 700;
+	
+}
+
+dl.product_detail dd {
+	font-size: 150%;
+	margin-bottom: 18px;
+}
+
+dl.product_detail dd.price span.regprice {
+	font-size: 12px;
+}
+
+div#detail_title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 184%;
+	font-weight: 700;
+}
+
+div#detail_profile {
+	clear: both;
+}
+
+.detail_sec h2 {
+	border-bottom: 1px solid black;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+}
+
+
+#detail_stuff {
+	overflow: hidden;
+	margin: 20px 0
+	;
+}
+
+#detail_stuff .sideimg {
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+#detail_stuff h3 {
+	margin-bottom: 10px;
+}
+
+ul#tracklist {
+	float: left;
+	width: 43%;
+	margin-bottom: 20px;
+}
+
+ul#tracklist li {
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+}
+
+ul#tracklist li.push:after {
+	content: url(http://www.sweetsoulrecords.com/ssr_shop/img/detail_tracklist_push.png);
+}
+
+div#tracklist_2 {
+        float: none;
+	width: 100%;
+        clear: both;
+}
+
+ul.tracklist_2 {
+        float: left;
+        width:50%;
+        margin-bottom: 20px;
+}
+
+ul.tracklist_2 li {
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+}
+
+ul.tracklist_2 li.push:after {
+	content: url(http://www.sweetsoulrecords.com/ssr_shop/img/detail_tracklist_push.png);
+}
+
+div.shirts_img {
+        margin-bottom: 10px
+}
+
+ul.works {
+        float: left;
+        width:50%;
+        margin-bottom: 20px;
+}
+
+
+div#detail_media {
+	float: right;
+	width: 46.9%;
+}
+
+div#detail_sound {
+        float: none;
+        width: 100%;
+        padding-bottom: 20px;
+}
+
+div.copy {
+        float: right;
+        width: 46.9%
+}
+
+@media screen and (max-width: 768px) {
+	ul#tracklist {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	div#detail_media {
+		float: none;
+		width: 100%;
+	}
+}
+
+div#detail_media iframe {
+	margin-bottom: 10px;
+}
+
+#detail_relatednews{
+        clear: both;
+	margin-bottom: 20px;
+}
+
+div#detail_otherrelease {
+	clear: both;
+}
+
+.aside_sec {
+	margin-top: 60px;
+	
+}
+
+#cont_detail .detail_sec span.expr {
+	color: black;
+	margin-left: 10px;
+}
+
+#detail_purchaseinfo {
+	margin-bottom: 0;
+}
+
+#detail_purchaseinfo h3 {
+	margin-bottom: 20px;
+}
+
+#detail_purchaseinfo #purchase1 {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+
+}
+
+#detail_purchaseinfo .sectionH3 {
+}
+
+#detail_purchaseinfo ul li {
+	margin-bottom: 20px;
+}
+
+#detail_purchaseinfo ul li dt {
+	background-position: 0 4px;
+	font-weight: 700;
+}
+
+#detail_purchaseinfo ul li dd {
+	margin-top: -17px;
+	margin-left: 125px;
+}
+
+
+#detail_purchaseinfo ul li .caution {
+	color: #c63;
+}
+
+#detail_purchaseinfo table.table1 {
+	width: 100%;
+	margin: 10px 0;
+}
+
+#detail_purchaseinfo table.table1 tr {
+	width: 100%;
+	line-height: 24px;
+	border-bottom: 1px solid #ccc;
+}
+
+#detail_purchaseinfo table.table1 th,
+#detail_purchaseinfo table.table1 td {
+	line-height: 24px;
+}
+
+#detail_purchaseinfo table.table1 th{
+	background-color: #e6e4dd;
+	text-align: center;
+	width: 50%;
+}
+
+#detail_purchaseinfo table.table1 td {
+	padding-left: 10px;
+}
+
+
+#detail_purchaseinfo table.table1 tr:last-child {
+	border-bottom: none;
+}
+
+
+@media screen and (max-width:480px) {
+	.line_01 ul li dl dd {
+		margin: 0 0 0 0;
+	}
+	#detail_purchaseinfo ul li dd {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+}

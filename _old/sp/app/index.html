@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,  initial-scale=1">
+<title>inko iphone</title>
+<link rel="stylesheet" href="js/jquery.mobile-1.0b3/jquery.mobile-1.0b3.min.css" />
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0b3/jquery.mobile-1.0b3.min.js" type="application/x-javascript"></script>
+</head>
+
+<body>
+<div id="home" data-role="page" data-theme="a">
+ <div data-role="header">
+   <h1>inko開発ホーム</h1>
+ </div>
+ <div data-role="content">
+    <p>開発ホームです。</p>
+    <a data-role="button" data-transition="fade" href="#list" data-theme="b">iphoneアプリリストへ</a>
+ </div>
+</div>
+<!-- list ページ -->
+<div id="list" data-role="page" data-theme="a">
+ <div data-role="header">
+   <h1>アプリリスト</h1>
+ </div>
+ <div data-role="content">
+    <ul data-role="listview" data-theme="g">
+    <li><a href="../../../sp/app/clock01" target="_blank">degitalClock(Noimage)</a></li>
+    <li><a href="../../../sp/app/clock02" target="_blank">degitalClock(image)</a></li>
+    <li><a href="../../../sp/app/clock03" target="_blank">analogClock</a></li>
+    <li><a href="../../../sp/app/photo01" target="_blank">photo</a></li>
+    <li><a href="../../../sp/app/photo02" target="_blank">photo(touch&amp;copyright)</a></li>
+    <li><a href="../../../sp/app/photoclock" target="_blank">photoClock</a></li>
+    <li><a href="../../../sp/app/draw01" target="_blank">draw</a></li>
+    <li><a href="../../../sp/app/map01" target="_blank">map</a></li>
+    <li><a href="../../../sp/app/gpstrack01" target="_blank">GPS</a></li>
+    <li><a href="../../../sp/app/memo01" target="_blank">memo</a></li>
+    </ul>
+    <br />
+   <a data-role="button" data-transition="fade" href="#home" data-theme="b">戻る</a>
+ </div>
+</div>
+<!-- /list ページ -->
+</body>
+</html>

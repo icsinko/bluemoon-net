@@ -1,0 +1,1744 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfloat{
+	clear:both;
+}
+
+.hidden {
+display:none;
+}
+
+.w320 {
+	display: none;
+}
+
+a img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+a img.rollover:hover {
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+
+.box_3 li:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.box_3 a img:hover {
+	opacity:1;
+	filter: alpha(opacity=100);
+
+}
+textarea,input {
+max-width:100%;
+}
+
+.violet {
+color:#c66;
+}
+.violet a:link {color:#c66;}
+.violet a:visited {color:#c66;}
+.violet a:hover {color:#c66;}
+.violet a:active {color:#c66;}
+
+strong {font-weight:700;}
+
+#head:after, 
+#contwrap:after, 
+#head #help:after, 
+#cont #h204:after, #cont .box_3 ul:after, #cont .box_4 ul:after, 
+#foot2 #foot2cont:after, 
+#foot2 #foot2cont li#links ul:after,
+#aside #banners:after,
+#aside #banners3:after,
+#aside #aside5:after,
+.topicpath:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    font-size:0;
+}
+
+
+pre {
+	/* Mozilla */
+	white-space: -moz-pre-wrap;
+
+	/* Opera 4-6 */
+	white-space: -pre-wrap;
+
+	/* Opera 7 */
+	white-space: -o-pre-wrap;
+
+	/* CSS3 */
+	white-space: pre-wrap;
+
+	/* IE 5.5+ */
+	word-wrap: break-word;
+}
+
+.breadcrumb {
+margin-top:15px;
+}
+
+strong {
+font-weight: 700;
+}
+
+.mb10 {
+margin-bottom:10px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/
+
+body{
+	font:12px/1.4 verdana, Hiragino Kaku Gothic Pro, "£Í£Ó £Ð¥´¥·¥Ã¥¯",  Osaka, sans-serif;
+	text-align:center;
+	position: relative;
+	}
+
+*+html body{font-size:75%}
+
+* html body{font-size:75%}
+
+
+table{border-collapse:collapse;border-spacing:0}
+
+textarea,input{margin:0;padding:0}
+
+caption,th{text-align:left}
+td,th{vertical-align: top}
+
+fieldset,img,abbr{border:none}
+
+li{list-style-type:none}
+
+.red {color:red;}
+
+a:link{color:#000;text-decoration:none;}
+a:visited{color:#000;text-decoration:none;}
+a:hover{color:#000;text-decoration:underline;}
+a:active{color:#000;text-decoration:none;}
+
+/*¥â¥À¥ó¥Ö¥é¥¦¥¶ÍÑ*/ img, iframe, object { max-width : 100%; } 
+/*IE7ÍÑ*/ .ie7 img, .ie7 object/ { width : 100%; } 
+/*IE8ÍÑ*/ .ie8 img, .ie8 object { width:auto¡À9} 
+
+em {font-style: italic;}
+
+.fb_iframe_widget {
+	max-width: 100%;
+}
+
+.fb-comments {
+	width: 100%!important;
+	margin-bottom: 30px;
+}
+
+.fb-comments span {
+	width: 100%!important;
+}
+
+.line_01 ul {
+	text-align: center;
+}
+
+.line_01 ul li{
+	float: none;
+	display: inherit;
+	position: relative;
+	width: auto;
+	text-align: left;
+	margin: 0;
+	padding: 4px 0 4px 10px;
+}
+
+
+.line_01 .page_navi {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.line_01 .page_navi li {
+	display: inline;
+}
+
+.line_01 .page_navi {
+	margin: 20px 0 0 0;
+}
+
+.line_01 .page_navi li{
+	margin: 0;
+	padding: 0 5px 0 3px;
+	border-right: 1px solid black;
+}
+
+.line_01 .page_navi li.tail, .line_01 .page_navi li.next, .line_01 .page_navi li.previous {
+	border: none;
+}
+
+.line_01 ul li dl dt{
+	background: url(http://www.sweetsoulrecords.com/img/common/icon01.gif) no-repeat 0 3px;
+	padding-left: 10px;
+}
+
+.line_01 ul li dl dt{
+padding:0 0 0 10px;
+margin: 0;
+}
+
+.line_01 ul li dl dd{
+padding:0 0 3px;
+margin: -17px  0 0 9em;
+}
+
+
+
+
+.line_2 ul li{
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_gt_black.png) no-repeat 0 4px;
+	padding-left: 8px;
+	margin-bottom: 5px;
+}
+
+.line_2 li p.date {
+	margin-bottom: 2px;	
+}
+
+
+.line_2 li .title {
+	font-weight: 700;
+}
+
+
+
+/***********************************************/
+/* layout divs                                 */
+/***********************************************/
+
+#headtitlewrap{
+	background-color:#000;
+	text-align:center;
+}
+
+#headtitle{
+	max-width:970px;
+	margin:0 auto;
+	padding: 0 3.25%;
+	text-align: center;
+	position: relative;
+}
+
+
+#headwrap {
+	background: url("http://www.sweetsoulrecords.com/ssr_shop/img/foot2cont_bg.png");
+	text-align:center;
+	padding: 0 3.25%;
+}
+
+@media screen and (max-width:480px) {
+	#headwrap {
+		padding-bottom: 30px;
+	}
+}
+
+#head {
+	max-width:970px;
+	margin:0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#contwrap {
+	max-width:970px;
+	margin:0 auto;
+	padding: 0 3.25%;
+	text-align: left;
+}
+
+
+#cont,#cont_detail, #head #headcont{
+	float: left;
+	display: inline;
+	width: 66.84%;
+	margin-right: 4.59%;
+	/*margin-right: 45px;*/
+}
+
+#head #headcont{
+   text-align: left;
+	position:relative;
+	padding: 15px 0;
+}
+
+body#index #cont, body#search #cont, body#tag #cont, body#notfound #cont {
+	margin-top: 30px;
+}
+
+#aside .sectionH2{
+position: relative;
+margin-bottom: 30px;	
+}
+
+#cont .sectionH2{
+position: relative;
+margin-bottom: 40px;
+}
+
+#aside #h206, #aside #h207 {
+	margin-bottom: 30px;
+}
+
+#aside, #head #headaside{
+	float: right;
+	display: inline;
+	/*width:270px;*/
+	
+	width: 27.835%;
+	position: relative;
+}
+
+.aside_top {
+	margin-top: 20px;
+}
+
+#foot{
+	/overflow:hidden;
+}
+
+
+#foot1 {
+	clear:both;
+	background:url("http://www.sweetsoulrecords.com/ssr_shop/img/h2bg.png");
+	padding: 0 3.25%;
+}
+
+#foot1cont{
+	position: relative;
+	max-width: 970px;
+	height:31px;
+	padding: 9px 0 0;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#foot2{
+	background: url("http://www.sweetsoulrecords.com/ssr_shop/img/foot2cont_bg.png");
+	color: white;
+	padding: 30px 0;
+}
+
+#foot2 #foot2cont{
+	max-width: 970px;
+	margin:0 auto;
+	padding: 0 3.25%;
+	text-align: left;
+}
+
+#foot3{
+	background: url("http://www.sweetsoulrecords.com/ssr_shop/img/foot3cont_bg.png");
+	padding:10px 0;
+
+}
+
+#foot3 #foot3cont{
+	max-width: 970px;
+	margin:0 auto;
+	padding: 0 3.25%;
+	text-align: left;
+	line-height:20px;
+}
+
+	
+/***********************************************/
+/* #head style                                 */
+/***********************************************/
+
+
+body#index .gnav .gnav01 {
+	border-bottom: 1px solid black;
+}
+
+#headtitle h1{
+	color:#fff;
+	height:18px;
+    _height:25px;
+	text-align:left;
+	display:block;
+	
+	margin:0 auto;
+	padding: 0 3.25%;
+	padding:7px 0 0 0;
+	font-size:92%;
+}
+
+#head #logo{
+}
+
+#head #help{
+	text-align: right;
+	position:absolute;
+	top:-25px;
+	right:0px;
+	/*width:270px;*/
+}
+
+#head #help li{
+	float:left;
+	display:inline;
+}
+
+
+ 
+#head .gnav {
+width:83%; /*original width:430px;*/
+/*width: 63.7755%;*/
+padding:0px 0 0 0;
+position: absolute;
+/*top: 6.6326%;
+left: 7.551%;*/
+top:88px;
+left:74px;
+}
+
+#head .gnav:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden}
+
+#head .gnav li{
+display:inline;
+/*margin:0 0 0 40px;*/
+margin: 0 0 0 5.4%;
+padding:0;
+}
+
+
+#head .gnav li {
+overflow:hidden;
+position:relative;
+}
+
+#head .gnav .sub {
+        position: absolute;
+        top:0;
+        left:0;
+        display: none;
+        z-index: 1; 
+       background-color: rgb(10, 10, 10);
+     		background-color: rgba(0,0,0,0.8);
+}
+
+@media screen and (max-width:480px) {
+	#head .gnav .gnav04 {
+		position: absolute;
+		top: 27px;
+		left: 0;
+	}
+	#head .gnav .sub {
+
+	}	
+}
+
+
+#head .gnav .gnav04 .sub {
+	width:260px;
+}
+
+#head .gnav .gnav04 .sub dl {
+	float:left;
+	width: 120px;	
+}
+
+#head .gnav .gnav04 .sub dl dd {
+	margin-left: 20px;
+}
+
+#head .gnav .sub li,
+#head .gnav .sub dt {
+		display: block;
+          margin-left: 0;
+          text-align: left;
+          padding-left: 10px;
+          margin: 10px;
+          background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_gnav1.png) no-repeat 0 5px;
+			color:#c68c3a;
+}
+#head .gnav .sub  a:link {color: #c68c3a; }
+#head .gnav .sub  a:visited {
+            color: #c68c3a; }
+#head .gnav .sub  a:hover {
+            color: #c68c3a; }
+#head .gnav .sub  a:active {
+            color: #c68c3a; }
+
+
+#head .gnav a{
+}
+
+
+#head #searchform {
+}
+
+#head #searchform #s, #aside #h205 .single , #foot2 .single{
+	width: 88.888%;
+	height: 26px;
+	border: none;
+	margin: 0;
+	padding: 3px 5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+
+}
+
+#head #searchform #s{
+	position: absolute;
+	top: 75px;
+	right: 0;
+	background-color: #fff;
+	width: 100%;
+}
+
+#head #searchform #search_btn	{
+	position: absolute;
+	top: 75px;
+	right: 0px;
+}
+
+#head #e_help {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+#head #e_help img {
+	margin-bottom: 10px;
+}
+
+/*\*/
+*html #head .gnav{height:1%}
+*html #head .gnav li{clear:right;}
+#head .gnav{display:block}
+/**/
+
+/***********************************************/
+/* #main style                                 */
+/***********************************************/
+
+.topicpath {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.topicpath li{
+	float: left;
+	display: inline;
+	color: #aaa;
+	background: url(/img/common/icon05.gif) no-repeat 0 5px;	
+	padding: 0 0 0 14px;
+	margin: 0 0 0 10px;
+}
+
+.topicpath li a:link {color: #aaa;}
+.topicpath li a:visited {color: #aaa;}
+.topicpath li a:hover {color: #aaa;}
+.topicpath li a:active {color: #aaa;}
+
+.topicpath li:first-child {
+	padding-left: 10px;margin: 0;
+}
+
+div.topicpathwrap {
+	margin: 0 auto;
+	padding: 0 3.25%;
+	max-width: 970px;
+	clear:both;
+}
+
+div.topicpathwrap .topicpath {
+	margin-bottom: 0;
+}
+
+#cont .sectionH2 h2,
+#aside .sectionH2 h2 {
+	padding: 5px;
+	height: 15px;
+	margin-bottom:10px;
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/h2bg.png);
+	font-size: 150%;
+	font-weight: 700;
+	border-radius: 2px;        /* CSS3Áð°Æ */  
+   -webkit-border-radius: 2px;    /* Safari,Google ChromeÍÑ */  
+   -moz-border-radius: 2px;   /* FirefoxÍÑ */  
+   vertical-align: middle;
+}
+
+#cont .sectionH2 h2 span.expr,
+#aside .sectionH2 h2 span.expr {
+	color: #fff;
+	font-size: 12px;
+	padding-left: 10px;
+	text-align: left;
+	font-weight: 400;
+}
+
+@media screen and (max-width:480px) {
+	#cont .sectionH2 h2 span.expr,
+	#aside .sectionH2 h2 span.expr {
+		display: none;
+	}	
+}
+
+#cont .sectionH2 h2 img,
+#aside .sectionH2 h2 img {
+	vertical-align: middle;
+}
+
+.box_3 ul {
+	margin-right: -2.96296296296%;
+	/*margin-left:-20px;*/
+	margin-top:-20px;
+	overflow: hidden;_zoom:1;
+}
+
+.box_3 ul li{
+	float:left;
+	display:inline;
+	position: relative;
+	width: 30.370370370370%;
+	/width:30.3%;
+	/*width:203px;*/
+	/*height:413px;
+	_height:415px;*/
+	margin: 4.5454% 2.96296296296% 0 0;
+	padding: 0 0 40px 0;
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/productboxbg.png);
+	overflow: hidden;
+	/*margin:20px 0 0 20px;*/
+}
+
+#aside .box_3 ul {
+margin-top:0;
+}
+
+#aside .box_3 ul li {
+float:none;
+display:block;
+width:76%;
+margin:0 auto;
+}
+
+.box_3 ul li dl{
+	text-align:left;
+}
+
+#h201 ul li dt, .news #h203 ul li dt
+{
+	min-height: 100px;
+}
+
+.box_3 ul li dt img.empty, #cont .box_4 ul li p img.empty {
+	background: url(http://www.sweetsoulrecords.com/img/common/bg_pattern.gif);
+}
+
+.box_3 ul li dd{
+	position: relative;
+	line-height: 1.4;
+	padding:10px 10px 0;
+}
+
+.box_3 ul li dd.title{
+	margin: 0;
+}
+
+.box_3 ul li dd.title span {
+	font-weight:700;
+}
+
+.box_3 ul li dd.title span.name {
+font-weight:700;
+}
+
+.box_3 ul li dd.content{
+
+}
+
+.box_3 ul li dd.detail{
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_gt_black.png) no-repeat 0 5px;
+	padding: 0 0 0 8px;
+	position: absolute;
+	bottom: 5px;
+	right: 12px;
+}
+
+
+#index #cont #h201 ul li dt{
+	font-weight: 700;
+	/* padding: 10px 10px 0; */
+}
+
+#index #cont #h202 ul li dt{
+	font-weight: 400;
+	padding:10px 10px 0;
+	/*height: 49.397590361446%;*/
+}
+
+#index #cont #h202 ul li dd.title{
+	font-weight: 700;
+}
+
+
+#cont .box_4 h2 {
+	margin-bottom: 3.33333%;}
+
+#cont .box_4 ul{
+	margin:0 20px;
+}
+
+#cont .box_4 ul li{
+	width: 15.84615384%;
+	margin: 0 2.76923% 0 0;
+	border: none;
+	
+	float:left;
+	display:inline;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+
+
+
+
+/*
+root element for the scrollable.  when scrolling occurs this
+element stays still.
+*/
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  margin:0 20px;
+  width: 92%;
+  height:100px;
+}
+ 
+.scrollable .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+}
+
+.items div {
+	float:left;
+  	margin:0 20px;
+	width: 100px;
+	height: 135px;
+	margin: 0 20px 0 0;
+	border: none;
+	
+	float:left;
+	display:inline;
+	position: relative;
+	overflow: hidden;
+}
+
+.items div p img.empty {
+	background: url(http://www.sweetsoulrecords.com/img/common/bg_pattern.gif);
+}
+
+
+
+
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Simplify the pullquotes and pull styles */
+.one-column.singular blockquote.pull {
+	margin: 0 0 1.625em;
+}
+.one-column.singular .pull.alignleft {
+	margin: 0 1.625em 0 0;
+}
+.one-column.singular .pull.alignright {
+	margin: 0 0 0 1.625em;
+}
+.one-column.singular .entry-meta .edit-link a {
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.one-column.singular #author-info {
+	margin: 2.2em -8.8% 0;
+	padding: 20px 8.8%;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+
+.pull.alignleft {
+	margin: 0 1.625em 0 0;
+	text-align: right;
+	width: 33%;
+}
+.singular .pull.alignleft {
+	margin: 0 1.625em 0 -22.25%;
+}
+.pull.alignright {
+	margin: 0 0 0 1.625em;
+	text-align: left;
+	width: 33%;
+}
+.singular .pull.alignright {
+	margin: 0 -22.25% 0 1.625em;
+}
+.singular blockquote.pull.alignleft,
+.singular blockquote.pull.alignright {
+	width: 33%;
+}
+.singular .entry-meta .edit-link a {
+	bottom: auto;
+	left: 50px;
+	position: absolute;
+	right: auto;
+	top: 80px;
+}
+
+
+dl#nodata {
+margin-top:10px;
+}
+
+/***********************************************/
+/* #aside style                                 */
+/***********************************************/
+
+#aside #social {
+	margin-bottom: 30px;
+	z-index: 10;
+}
+
+#aside #social:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    font-size:0;
+}
+
+#aside #social li{
+	float:left;
+	display:inline;
+	width: 25%;
+	/width:24.8%;
+}
+#aside .line_1 li{
+	background: url(/img/common/icon01.gif) no-repeat 0 5px;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+#aside .line_1 li {
+	line-height: 160%;
+}
+
+#aside #aside1 {
+	position: relative;
+}
+
+#aside #aside2 ol{
+padding:0 0 3px
+}
+
+#aside #aside2 ol li{
+background:url(http://www.sweetsoulrecords.com/ssr_shop/img/aside_rank_1.png) no-repeat 0 5px;
+padding:0 0 0 30px;
+margin: 4px 0;
+}
+
+#aside #aside2 ol li img {
+max-width:30px;
+max-height:30px;
+margin-right:7px;
+vertical-align:top;
+
+}
+
+#aside #aside2 ol li.li01{padding:2px 0 0 28px
+}
+
+#aside #aside2 ol li.li02{background:url(http://www.sweetsoulrecords.com/ssr_shop/img/aside_rank_2.png) no-repeat 0 5px;}
+#aside #aside2 ol li.li03{background:url(http://www.sweetsoulrecords.com/ssr_shop/img/aside_rank_3.png) no-repeat 0 5px;}
+
+
+#aside #aside3 ul li{
+	background: url(http://www.sweetsoulrecords.com/img/common/icon01.gif) no-repeat 0 4px;
+	padding: 0 0 0 10px;
+}
+
+#aside #aside3 ul li li {
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_cat1.png) no-repeat 0 2px;
+	padding: 0 0 0 12px;
+}
+
+#aside #aside3 ul li li.child {
+	margin-left: 10px;
+}
+
+#aside #aside3 ul li li.last {
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_cat2.png) no-repeat 0 4px;
+}
+
+#aside #h204 li .title, #aside #h210 li .title {
+	font-weight: 700;
+}
+
+#aside #aside5 #aside5_cont {
+overflow:hidden;
+margin-bottom: 10px;
+}
+
+#aside #aside5 #aside5_cont p {
+overflow:hidden;
+}
+
+#aside #aside5 #aside5_cont img#aside_logo{
+float:left;
+margin-right:10px;
+}
+
+#aside #aside5 .social {
+	text-align: center;
+}
+
+#aside #aside5 .social img {
+	margin: 0 10px;
+}
+
+h2.widgettitle {display: none;}
+
+#aside #h205 .newsletter , #foot2 .newsletter, body#newsletter .newsletter{
+	position: relative;
+}
+
+#aside #aside6 p{
+	margin-bottom: 5px;
+	color: #C88E3C;
+}
+
+.newsletterframe {
+	width: 100%;
+}
+
+body#newsletter #cont {
+	width: 100%;
+}
+
+.newsletterframe {
+	width: 100%;
+}
+
+
+.newsletterframe iframe {
+	width: 100%;
+}
+
+body.newsletter-footer {
+	color:white;
+	background-color: black;
+}
+
+.fb-like-box {
+	margin-top: -3px;
+	border: 1px solid #aaa;
+	border-top-color: #315c99;
+}
+
+.fbConnectWidgetTopmost {
+	width: 80px!important;
+	border: none;
+}
+
+
+#aside .twitter_head{margin-top: 30px;}
+#aside .twtr-hd{display: none}
+#aside .twtr-ft{display: none}
+#aside .twtr-widget{margin-top: -3px;margin-bottom: 20px;overflow: visible}
+#aside .twtr-bd{border: 1px solid #736d71;}
+#aside .twtr-img {width: 100%;height: 100%;}
+#aside .twtr-doc{
+width: 100%!important;
+
+ -moz-border-radius:0px;
+ -webkit-border-radius:0px;
+ border-radius:0px;}
+#aside .twtr-timeline{
+ -moz-border-radius:0px;
+ -webkit-border-radius:0px;
+ border-radius:0px;
+ }
+ #aside .twtr-tweet{border: none;}
+ #aside .twtr-tweet-wrap{
+ margin:6px 8px;
+ padding:none;
+ border-bottom:1px dotted #ccc
+ }
+ #aside #tweet-id-1 .twtr-tweet-wrap{border: none;}
+
+#aside #banners,
+#aside #banners3 {
+	margin-bottom: 20px;
+}
+
+#aside #banners .left, 
+#aside #banners .right,
+#aside #banners3 .left, 
+#aside #banners3 .right {
+	width: 46.2%;
+}
+
+#aside #banners .left,
+#aside #banners3 .left{
+	float: left;
+}
+
+#aside #banners3 .right,
+#aside #banners .right{
+	float: right;
+}
+
+#aside #banners2 img {
+	margin-bottom: 10px;
+}
+#aside .banners {
+text-align: center;
+margin-bottom: 40px;
+}
+
+#aside .banners img {
+	margin-bottom: 10px;
+
+}
+
+#aside #h212 {
+	text-align: center;
+}
+/***********************************************/
+/* #foot style                                 */
+/***********************************************/
+
+
+#foot1cont .twitter-share-button {
+	margin-top: 3px;
+}
+
+#foot2cont li#foot2_logo {
+	padding-right:3%;
+	margin-left:0;
+	width: 12%;
+}
+
+#foot2cont li#shortcuts ul{
+	margin-bottom: 10px;
+}
+
+#foot2cont li.foot2block {
+	background-image: none;
+	float: left;
+	width: 18%;
+	margin: 0 0.4%;
+	padding: 0 0.4%;
+	border-right: 1px solid #333;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	line-height: 180%;
+}
+
+#foot2cont li.foot2block ul li {
+	background-position: 0 7px;
+}
+
+#foot2cont li#foot2_categories {
+}
+
+#foot2cont li#foot2_categories ul li {
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_minus.png) no-repeat 0 6px;
+	padding-left: 10px;
+}
+
+#foot2cont li#links {
+	width: 12%;
+	text-align: center;
+	margin-right:0;
+}
+
+#foot2cont li#links li {
+	background: none;
+}
+
+#foot2cont li#links img {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width:480px) {
+	#foot2cont li#links li {
+		float: left;
+		padding-right: 15px;
+	}
+	#foot2cont li#links li.foot-link-terranova {
+		padding-top: 5px;
+	}
+	#foot2cont li#links img {
+		margin-bottom: 0;
+	}
+}
+
+#foot2cont li.foot2block h4 {
+	font-weight: 700;
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+#foot2cont li:last-child {
+	border-right: none;
+}
+
+#foot2 ul li{
+	background: url(http://www.sweetsoulrecords.com/img/common/icon02.gif) no-repeat 0 5px;
+	padding: 0 0 0 10px;
+}
+
+#foot2 #foot_dt_5{
+margin-bottom: 10px;
+}
+
+#foot a:link{color:#fff;text-decoration:underline;}
+#foot a:visited{color:#fff;text-decoration:none;}
+#foot a:hover{color:#fff;text-decoration:underline;}
+#foot a:active{color:#fff;text-decoration:none;}
+
+#foot1 .fb-like {
+	position: absolute;
+	bottom: 9px;
+	left: 0;
+}
+
+#foot1 .twitter-share-button {
+	position: absolute;
+	bottom: 10px;
+	left: 100px;
+}
+
+#foot1 .mixi-check-button{
+	position: absolute;
+	bottom: 12px;
+	left: 210px;
+}
+
+
+
+
+#foot2 a:link{color:#fff;text-decoration:none;}
+#foot2 a:visited{color:#fff;text-decoration:none;}
+#foot2 a:hover{color:#fff;text-decoration:underline;}
+#foot2 a:active{color:#fff;text-decoration:none;}
+
+
+#foot3 #foot3cont img{
+	margin-right: 25px;
+	vertical-align: middle;
+}
+
+#foot3 address{
+	float: right;
+	color:#e3b169;
+	font-weight: 400;
+}
+
+#foot3 address a:link { color: #e3b169; text-decoration:none;}
+#foot3 address a:visited { color: #e3b169; text-decoration:none;}
+#foot3 address a:hover { color: #e3b169; text-decoration:underline;}
+#foot3 address a:active { color: #e3b169; text-decoration:none;}
+
+
+#foot3 span {
+	color: #e3b169;
+}
+
+#foot3 span a:link {color: #e3b169;}
+#foot3 span a:visited {color: #e3b169;}
+#foot3 span a:hover {color: #e3b169;}
+#foot3 span a:active {color: #e3b169;}
+
+#foot2 #foot2cont dl.search {
+	margin-bottom: 0;
+}
+
+
+/***********************************************/
+/* util                                        */
+/***********************************************/
+.readmore {
+	color: #fff;
+	text-align: right;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	margin-right: 5px;
+}
+
+.readmore:after {
+	content: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_gt_white.png);
+}
+
+.readmore a:link{color: #fff;text-decoration: none;}
+.readmore a:visited{color: #fff;text-decoration: none;}
+.readmore a:hover{color: #fff;text-decoration: underline;}
+.readmore a:active{color: #fff;text-decoration: none;}
+
+.moreicon {
+	font-weight: 400!important;
+	color:#c36!important;
+}
+
+.ondes {color: #aaa;}
+
+.pagetop{padding-top:3px;text-align:right;float: right;display: inline;width: 100px;}
+.pagetop img {vertical-align: middle;margin-right: 4px}
+.w770 {display: none}
+
+@media (min-width: 1042px) {
+	#headtitle{
+		margin: 0 auto;
+	}
+	#head {
+		margin: 0 auto;
+	}
+}
+@media (max-width:770px) {
+	#head .gnav li{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		margin-left: 1%;
+	}
+	#cont .box_3 ul {
+		margin-right: -4%;
+		margin-top:-20px;
+		overflow: hidden;_zoom:1;
+	}
+	
+	#cont .box_3 ul li{
+		float:left;
+		display:inline;
+		position: relative;
+		width: 46%;
+		/width:45.5%;
+		margin: 4.5454% 4% 0 0;
+		padding: 0 0 40px 0;
+		background-color: #f7f6f5;
+		overflow: hidden;
+	}
+	#aside #twtr-widget-1 .twtr-avatar{display: none;}
+	#aside #twtr-widget-1 .twtr-tweet-text{margin-left: 0;}
+	#aside .twtr-widget {margin-bottom: 10px;}
+
+	.w770{display: inherit;}
+	.not770{display: none;}
+
+}
+@media (max-width:600px) {
+	#head .gnav li{
+		margin-left: 1.3%;
+	}
+		
+	#foot3 address{
+		float: none;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.w770{display: none;}
+	.not770{display: inherit;}
+	#cont, #cont_detail {
+		overflow: hidden;
+	}
+	#cont, #cont_detail,#head #headcont, #aside, #head #headaside {
+	    float: none;
+	    display: inherit;
+	}
+	#cont #h204,
+	#cont #h205 {
+		float: none!important;
+		width: 100%!important;
+	}
+	#head {
+		height: 140px;
+	}
+	#head #headaside {
+		position: absolute;
+		top:50px;
+		right: 0;
+	}
+	#cont, #cont_detail{
+		width: 100%;
+	}
+	#aside {
+		width: 100%;
+	}
+	#cont .sectionH2 ul li,
+	#cont_detail .sectionH2 ul li,
+	#aside .box_3 ul li {
+		width: 97.037037037%;
+	}
+	#cont #h203 {
+		display: none;
+
+	}
+	#head #headcont, #head #headaside {
+		width: 100%;
+	}
+	#head #headcont ul.gnav {
+		position: absolute;
+		top: 115px;
+		left: 00px;
+		width: 100%;
+	}
+	#head #headcont ul.gnav>li {
+		margin: 0;
+	}
+	#head #headcont ul.gnav li.gnav01 {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#head #headcont ul.gnav li.gnav02 {
+		position: absolute;
+		top: 0;
+		left: 12%;
+	}
+	#head #headcont ul.gnav li.gnav03 {
+		position: absolute;
+		top: 0;
+		left: 35%;
+	}
+	#head #headcont ul.gnav li.gnav04 .sub{
+		right: 0;
+	}
+	#head #headcont ul.gnav li.gnav04 ul,
+	#head #headcont ul.gnav li.gnav04:hover ul {
+		right:0;
+		left: auto;
+	}
+
+	#head #headcont ul.gnav li.option {
+		display: none;
+	}
+	#head #headcont ul.gnav li.optlast {
+		margin: 0;
+	}
+	#headtitle {
+		display: none;
+	}
+	#head #help {
+		top: 0;
+	}
+	#head #help .optional {
+		display: none;
+	}
+	#head #headaside #searchform #s {
+		width: 46%;
+		position: absolute;
+		left: auto;
+		top: 10px;
+		right: 28px;
+	}
+	#head #searchform #search_btn {
+		top: 10px;
+	}
+	#cont #h202 {
+		margin-bottom: 15px;
+	}
+	.optional, #aside #h206,#foot2 #foot2cont #box1, #foot2 #foot2cont #box2, #foot2 #foot2cont #box3 dl {
+		display: none;
+	}
+	#foot2 #foot2cont li.foot2block {
+		float: none;
+		width: 100%;
+		height: auto!important;
+	}
+	#foot2 #foot2cont li#foot2_logo {
+		display: none;
+	}
+	
+	#foot2 #foot2cont #box3 dl.search {
+		display: inherit;
+	}
+	.w320 {
+		display: inherit;
+	}
+	#aside {
+		margin-top: 0;
+	}
+	#aside #banners {
+		margin-bottom: 20px;
+	}
+	#aside #banners .left, #aside #banners .right,
+	#aside #banners3 .left, #aside #banners3 .right{
+		width: 43.5%;
+		margin : 0 3.25% 6.5%;
+	}
+
+	#aside #twtr-widget-1 .twtr-avatar{display: block;}
+	#aside #twtr-widget-1 .twtr-tweet-text{margin-left: 40px;}
+	#foot1 .mixi-check-button{display: none};
+	#foot2 #foot2cont #box3 dl.search {
+		display: block;
+	}
+	#foot2 #foot2cont #box3 {
+	 width: 100%;
+	}
+
+
+	/*
+	#aside .fb_iframe_widget {display: none}
+	#aside .twitter_head { margin-top: 0; }
+	*/
+}
+
+
+
+
+
+
+
+
+/***********************************************/
+/* #faq                                        */
+/***********************************************/
+
+p.faq-menu{
+margin-bottom:30px;
+}
+
+
+.faq ul li {
+    border-bottom: 1px dotted #CCCCCC;
+    margin: 0 0 10px;
+    padding: 0 0 10px 30px;
+}
+
+.faq ul li.li01 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_001.gif") no-repeat;
+}
+
+.faq ul li.li02 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_002.gif") no-repeat;
+}
+
+.faq ul li.li03 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_003.gif") no-repeat;
+}
+
+.faq ul li.li04 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_004.gif") no-repeat;
+}
+
+.faq ul li.li05 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_005.gif") no-repeat;
+}
+
+.faq ul li.li06 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_006.gif") no-repeat;
+}
+
+.faq ul li.li07 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_007.gif") no-repeat;
+}
+
+.faq ul li.li08 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_008.gif") no-repeat;
+}
+
+.faq ul li.li09 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_009.gif") no-repeat;
+}
+
+.faq ul li.li10 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_010.gif") no-repeat;
+}
+
+.faq ul li.li11 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_011.gif") no-repeat;
+}
+
+.faq ul li.li12 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_012.gif") no-repeat;
+}
+
+.faq ul li.li13 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_013.gif") no-repeat;
+}
+
+
+/***********************************************/
+/* #faq2                                       */
+/***********************************************/
+
+#cont #faq-cont {
+	margin-top: 20px;
+}
+
+#cont #faq-cont #faq-index {
+	margin-bottom: 40px;
+}
+
+#cont #faq-cont h2 {
+	color: white;
+	height: 24px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+#cont #faq-cont h3 {
+	border-bottom: 1px solid black;
+	font-size: 108%;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+
+#cont #faq-cont .sectionH3 {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#cont #faq-cont .sectionH3:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    font-size:0;
+}
+
+#cont #faq-cont .to_top {
+	background: url(http://www.sweetsoulrecords.com/ssr_shop/img/icon_gt_black.png) no-repeat 0 5px;
+	padding: 0 0 0 8px;
+	float: right;
+}
+
+#faq-cont .faq2 dl dt {
+    margin: 0 0 10px;
+    padding: 0 0 0px 30px;
+    font-weight:bold
+}
+
+#faq-cont .faq2 dl dd {
+    border-bottom: 1px dotted #CCCCCC;
+    margin: 0 0 10px;
+    padding: 0 0 10px 30px;
+}
+
+#faq-cont .faq2 dl dt.dt00 {
+    text-align:right;
+}
+
+#faq-cont .faq2 dl dt.dt01 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_001.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd01 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_101.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt02 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_002.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd02 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_102.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt03 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_003.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd03 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_103.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt04 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_004.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd04 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_104.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt05 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_005.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd05 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_105.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt06 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_006.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd06 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_106.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt07 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_007.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd07 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_107.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt08 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_008.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd08 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_108.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt09 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_009.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd09 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_109.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt10 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_010.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd10 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_110.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt11 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_011.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd11 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_111.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt12 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_012.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd12 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_112.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dt.dt13 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_013.gif") no-repeat;
+}
+
+#faq-cont .faq2 dl dd.dd13 {
+    background: url("http://terranova.lsinc.co.jp/img/information/5/number_113.gif") no-repeat;
+}
+
+#cont .sort span,
+#cont .sort strong,
+#cont .pagenavi_top,
+#cont .pagenavi_bottom {
+font-size:117%;
+}

@@ -1,0 +1,91 @@
+/**
+ * Have a good Trip
+ */
+body {
+  padding: 12px 36px;
+  background:#000;
+}
+
+#container {
+  clear: both;
+  position: relative;
+}
+
+.box {
+  *zoom: 1;
+  margin: 10px;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+.box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.box img {
+  display: block;
+}
+.box .thumb {
+  float: left;
+  padding-right: 10px;
+}
+.box dl {
+  overflow: hidden;
+  *zoom: 1;
+  font-size: 14px;
+  line-height: 24px;
+}
+.box dl dt {
+  font-weight: bold;
+  color: #0372ac;
+}
+.box dl dd {
+  color: #333;
+}
+
+.col-1 {
+  width: 130px;
+}
+
+.col-2 {
+  width: 300px;
+}
+
+/**
+ * CSS Transition
+ */
+.masonry-brick {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: left, right, top;
+  -moz-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top;
+}
+
+/**
+ * infinite scroll loading
+ */
+#infscr-loading {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}

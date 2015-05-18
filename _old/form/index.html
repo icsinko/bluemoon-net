@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Form Check</title>
+<link rel="stylesheet" type="text/css" href="common/css/base.css">
+<link rel="stylesheet" type="text/css" href="common/css/style.css">
+<link rel="stylesheet" type="text/css" href="common/css/exvalidation.css">
+<script type="text/javascript" src="../common/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="common/js/validateCheck.js"></script>
+<!--
+<script type="text/javascript" src="common/js/exvalidation.js"></script>
+<script type="text/javascript" src="common/js/exchecker-ja.js"></script>
+<script type="text/javascript" src="common/js/password_strength.min.js"></script>
+<script type="text/javascript" src="common/js/formCheck.js"></script>
+-->
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="contents">
+    <h1>Form Check</h1>
+    <form method="post" action="#" name="regist" id="regist">
+      <table>
+      	<tbody>
+        	<tr>
+          	<th>ID<span class="require">*</span></th>
+            <td><input type="text" name="id" id="id" size="20"></td>
+          </tr>
+        	<tr>
+          	<th>Password<span class="require">*</span></th>
+            <td><input type="password" name="pass" id="pass" size="20"></td>
+          </tr>
+        	<tr>
+          	<th>Password(確認)<span class="require">*</span></th>
+            <td><input type="password" name="passConfirm" id="passConfirm" size="20"></td>
+          </tr>
+          <tr>
+            <th>メールアドレス<span class="require">※</span></th>
+            <td>
+              <span id="mailGroup"><input type="text" name="mail1" id="mail1" value="" size="15" /> @ <input type="text" name="mail2" id="mail2" value="" size="30" /></span>
+            </td>
+          </tr>
+          <tr>
+            <th>メールアドレス（確認）<span class="require">※</span></th>
+            <td>
+              <span id="mailConfirmGroup"><input type="text" name="mailConfirm1" id="mailConfirm1" value="" size="15" /> @ <input type="text" name="mailConfirm2" id="mailConfirm2" value="" size="30" /></span>
+            </td>
+          </tr>
+        	<tr>
+          	<th>職業<span class="require">*</span></th>
+            <td>
+            	<select name="job" id="job">
+              	<option value="" selected="selected">選択してください</option>
+                <option value="会社員">会社員</option>
+                <option value="パート">パート</option>
+              </select>
+            </td>
+          </tr>
+        	<tr>
+          	<th>どこで知りましたか?<span class="require">*</span></th>
+            <td>
+            	<span id="mediaGroup">
+              	<label for="media1"><input type="checkbox" name="media" id="media1" value="検索">検索</label>
+              	<label for="media2"><input type="checkbox" name="media" id="media2" value="ブログ">ブログ</label>
+              	<label for="media3"><input type="checkbox" name="media" id="media3" value="雑誌">雑誌</label>
+              	<label for="media4"><input type="checkbox" name="media" id="media4" value="その他">その他</label>
+              </span>
+            </td>
+          </tr>
+        	<tr>
+          	<th>上記が「その他」の場合</th>
+            <td><input type="text" name="otherValue" id="otherValue" size="50"></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btn">
+				<input type="image" src="common/images/submit.gif" name="" alt="この内容で登録する" />
+      </div>
+    </form>
+  </div><!-- contents -->
+</div>
+</body>
+</html>

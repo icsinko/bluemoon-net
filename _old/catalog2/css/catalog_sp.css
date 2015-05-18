@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*RESET*/
+
+body{
+	background:#000;
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+}
+#wrapper ul li div
+{
+	position: relative;
+}
+/********** FlickSlide **********/
+.clearfix:after 
+{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+div.flickSlideContainer
+{
+	position:relative;
+	width:100%;
+	-webkit-box-sizing:content-box;
+}
+div.moveWrap 
+{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	height:auto;
+	-webkit-box-sizing:content-box;
+}
+ul.moveWrapBG 
+{
+	display:inline-block;
+	position:relative;
+	width:100%;
+	height:auto;
+	visibility:hidden;
+	-webkit-box-sizing:content-box;
+	margin:0;
+	padding:0;
+}
+div.slideMask 
+{
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-box-sizing:content-box;
+	margin-right:1px;
+}
+div.moveWrap>ul.move 
+{
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:none;
+}
+div.moveWrap>ul.move li.slideUnit 
+{
+    float:left;
+    list-style:none;
+	padding:0;
+	margin:0;
+	text-align:center;
+	-webkit-box-sizing:content-box;
+}
+li.slideUnit>div 
+{
+    display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+	padding:0px;
+	margin:0;
+	-webkit-box-sizing:content-box;
+}
+
+li.slideUnit>div ul.toplink li
+{
+    float: left;
+}
+li.slideUnit>div ul.toplink li img
+{
+	vertical-align: top;
+	position: relative;
+	z-index: 10;
+}
+
+li.slideUnit>div ul.toplink a {
+	background: #FFF;
+	position: absolute;
+	z-index: 100;
+	display: block;
+}
+

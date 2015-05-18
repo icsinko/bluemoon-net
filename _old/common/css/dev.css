@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+#contents .section {
+	clear: both;
+	position: relative;
+	margin-left: 20px;
+	padding: 20px 10px 40px;
+	border-top: 1px solid #c0c0c0;
+	width:800px;
+}
+#contents .section p.more {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#contents .section.half {
+	clear: none;
+	float: left;
+	width: 320px;
+}
+#contents .section h2 {
+	margin-bottom: 1em;
+	margin-left: -13px;
+	padding-left: 13px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3d2808;
+}
+
+/* マップ */
+#contents #gmap {
+	width:800px;
+	height: 500px;
+	background: #eee;
+	border: 1px solid #e1deda;
+}
+
+.mod-image {
+	width: 676px;
+}
+.mod-image .main { width: 676px; height: 450px;}
+.mod-image .main li{
+	display:none;
+	position:absolute;
+}
+.mod-image .thumb { padding: 0 2px 5px; _margin: 0 -3px; overflow: hidden; _zoom: 1; background: url(file:///Macintosh%20HD/Library/WebServer/Documents/common/img/common/bg.gif); }
+.mod-image .thumb li { position: relative; float: left; margin: 5px 3px 0; width: 55px; height: 55px; background: #000; cursor: pointer; }
+.mod-image .thumb img { position: absolute; top: 0; background: #000; opacity: 0.6; -moz-opacity: 0.6; -webkit-opacity: 0.6; filter: alpha(opacity=60); }
+.mod-image .thumb .current { position: absolute; top: -5px; width: 55px; height: 65px; opacity: 0; -moz-opacity: 0; -webkit-opacity: 0; filter: alpha(opacity=0); background: url(../images/gallery/target.gif) no-repeat; }
+
+
+

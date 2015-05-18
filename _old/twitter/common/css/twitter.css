@@ -1,0 +1,91 @@
+/* CSS Document */
+
+#contents #side {
+	margin-left:50px;
+	padding:20px;
+	width:900px;
+}
+#contents #side #alpha{
+	float: left;
+	padding-top: 20px;
+	width: 500px;
+	border-top: 1px solid #c0c0c0;
+}
+#contents #side #beta {
+	float: right;
+	padding-top: 20px;
+	width: 230px;
+	border-top: 1px solid #c0c0c0;
+}
+#contents #side #beta #banner li {
+	margin-top: 10px;
+	/display: inline;
+	/zoom: 1;
+}
+#contents #side #beta #banner li a {
+	display: block;
+	padding: 7px;
+	background: #eee; /* オーバーカラー（デフォルト） */
+}
+#contents #side #beta #banner li a.color-facebook {
+	background: #3b599a; /* オーバーカラー（facebook） */
+}
+#contents #side #beta #banner li a.color-twitter {
+	background: #3cf; /* オーバーカラー（twitter） */
+}
+#contents #side #beta #banner li a.color-blog {
+	background: #609; /* オーバーカラー（blog） */
+}
+
+/*clearfix*/
+#contents #side:after{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+}
+
+/* 関連ツイート */
+#contents #twitter ul li {
+	position: relative;
+	margin-bottom: 1em;
+	font-size: 11px;
+	/zoom: 1;
+        padding:0 0 20px;
+        border-bottom: 1px solid #c0c0c0;
+}
+#contents #twitter ul li span {
+	display: block;
+}
+#contents #twitter ul li span.time {
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 28px;
+	color: #c0c0c0;
+}
+#contents #twitter ul li span.name {
+	margin-left: 34px;
+	font-weight: bold;
+	line-height: 28px;
+}
+#contents #twitter ul li span.icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1px;
+	border: 1px solid #c0c0c0;
+}
+#contents #twitter ul li span.text {
+	overflow: hidden;
+	/zoom: 1;
+	font-size: 12px;
+}
+/* AJAXステータス表示用パーツ */
+#contents #side #alpha #twitter .msg {
+	color: #c0c0c0;
+}
+#contents #side #alpha #twitter .error {
+	color: #c00;
+}
+

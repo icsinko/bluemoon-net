@@ -1,0 +1,90 @@
+*{}
+
+body{
+    background:#000000;
+}
+
+a{
+	outline: none;
+}
+
+img{
+     border-style:none;
+}
+
+#wrapper{
+    width:100%;
+    position:absolute;
+}
+
+div#contents{
+	width:700px;
+	height:372px;
+	padding:4px;
+	margin:11px 0px 10px 0px;
+}
+
+div#contents li{
+	float: left;
+}
+
+div#contents ul.main-image{
+	position:relative;
+	display:none;
+}
+div#contents ul.main-image li {
+    float:left;
+}
+
+div#contents ul.main-image li{
+    position:relative;
+    display:block;
+    position:absolute; top:0; left:0; z-index:8;
+}
+div#contents ul.main-image li.stay { z-index:12; }
+div#contents ul.main-image li.last-stay { z-index:11; }
+div#contents ul.main-image li.active { z-index:10; }
+div#contents ul.main-image li.last-active { z-index:9; }
+div#contents ul.main-image li.hidden { z-index:0; }
+
+
+div#contents div#navi-wrapper{
+	margin:220px 0 0 0;
+	width:600px;
+	height:50px;
+}
+
+div#contents div#navi-wrapper div#navi-inner{
+	width:540px;
+	height:50px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+}
+
+div#contents div#navi-wrapper ul.navi{
+	position:relative;
+    margin:0;
+}
+
+
+div#contents div#navi-wrapper ul.navi li{
+	width:150px;
+	height:50px;
+	margin:0 30px 0 -10px;
+	_margin:0 3px 0 2px;/*IE6*/
+}
+
+div#contents div#navi-wrapper ul.navi li img{
+	width:150px;
+	height:50px;	
+}
+
+div#contents div#navi-wrapper .navi-btn-left{
+	float:left;
+}
+
+div#contents div#navi-wrapper .navi-btn-right{
+	float:right;
+}
+

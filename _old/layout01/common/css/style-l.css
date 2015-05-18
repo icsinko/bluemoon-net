@@ -1,0 +1,138 @@
+/* CSS Document */
+
+#wrapper {
+	width:960px;
+	margin:auto;
+}
+
+/*header*/
+#header {
+	margin:0 0 50px;
+}
+
+/*contents*/
+#contents {
+	width:600px;
+	float:left;
+	margin:0 0 50px;
+}
+#contents h2 {
+	font-size:28px;
+	border-bottom:solid 1px #aaaaaa;
+	margin:0 0 6px;
+	padding:0 0 3px;
+}
+.cat {
+	font-size:14px;
+	color:#666666;
+}
+.cat a {
+	color:#666666;
+}
+#contents p {
+	line-height:1.6;
+}
+
+/*sidebar*/
+#sidebar {
+	width:300px;
+	float:right;
+	margin:0 0 50px;
+}
+.sidemenu {
+	margin-bottom:50px;
+}
+.sidemenu h3 {
+	font-size:26px;
+	color:#66c1e8;
+	margin:0 0 5px;
+}
+.sidemenu ul {
+	border-top:solid 1px #aaaaaa;
+}
+.sidemenu li {
+	list-style-type:none;
+	border-bottom:solid 1px #aaaaaa;
+}
+.sidemenu li a {
+	display:block;
+	font-size:14px;
+	color:#666666;
+	padding:10px 0 10px 20px;
+	background-image:url(../images/listmark.png);
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+.sidemenu li a:hover {
+	background:#b4f0ff;
+}
+
+/*logo*/
+#logo {float:left;}
+#logo h1 {
+	line-height:1;
+}
+
+/*icon menu*/
+#iconmenu {
+	float:right;
+	text-align:right;
+}
+#iconmenu ul {
+	padding:3px 0 0;
+}
+#iconmenu li {
+	display:inline;
+	list-style-type:none;
+}
+
+/*header img*/
+#headerimg img {
+	vertical-align:bottom;
+}
+
+/*menu*/
+#menu {
+	font-size:14px;
+	overflow:hidden;
+	border-top:solid 1px #ffffff;
+	background:#000000;
+}
+#menu li {
+	list-style-type:none;
+	float:left;
+}
+#menu li a {
+	display:block;
+	width:120px;
+	padding:5px 0;
+	border-right:solid 1px #ffffff;
+	color:#ffffff;
+	text-align:center;
+}
+#menu li a:hover {
+	background:#0097d8;
+}
+
+/*footer*/
+#footer {
+	clear:both;
+	color:#ffffff;
+	background:#000000;
+	padding:10px 10px 20px;
+}
+#footer small {
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+}
+
+/*--- clearfix ---*/
+#iconmenu:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: " ";
+	font-size: 0;
+}

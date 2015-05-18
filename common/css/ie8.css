@@ -1,0 +1,53 @@
+/* CSS Document */
+
+h2 {
+	background:url(../images/bg_ttl_h2_s.gif) left top no-repeat;
+}
+.indicator {
+	background: url(../images/bg_indicater_s.png) repeat-x left top;
+}
+.topNews {
+	margin:0 7px 0 0;
+}
+.topLifestyleText {
+	padding:6px 10px 15px;
+}
+
+.newsIcn {
+	background:url(../images/bg_news_category_s.png) left top no-repeat;
+}
+.newsCategory {
+	background:url(../images/ttl_news_category_s.png) left top no-repeat;
+}
+.newsBacknumber {
+	background:url(../images/ttl_news_backnumber_s.png) left top no-repeat;
+}
+.shopArea {
+	background:url(../images/ttl_shop_area_s.png) left top no-repeat;
+}
+.lifestyleAbout {
+	background:url(../images/ttl_about_ls_s.png) left top no-repeat;
+}
+.archives {
+	background:url(../images/ttl_archives_s.png) left top no-repeat;
+}
+
+a img:hover {
+	background:#f0e4d9;
+}
+.sns a img:hover {
+	background:#fbf7f2;
+}
+#topbackbtn img,
+#topnextbtn img,
+.shoparea td.detail a img:hover,
+#footerCom a img:hover,
+.topFeatureTitle .sns a img:hover {
+	background:#ffffff;
+}
+.topNewsTitle .sns a img:hover {
+	background:#D3BEA0;
+}
+.topLifestyleText .sns a img:hover {
+	background:#B1CEC1;
+}

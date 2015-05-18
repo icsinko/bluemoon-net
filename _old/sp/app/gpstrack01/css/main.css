@@ -1,0 +1,24 @@
+/* CSS Document */
+
+body{
+	width:320px;
+	height:480px;
+	background-color:#FFF;
+}
+#myMap{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:300px;
+	height:300px;
+}
+#clearTrack{
+	position:absolute;
+	left:10px;
+	top:310px;
+}
+#stat{
+	position:absolute;
+	left:10px;
+	top:340px;
+}

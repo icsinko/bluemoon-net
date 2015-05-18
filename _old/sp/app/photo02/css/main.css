@@ -1,0 +1,21 @@
+/* CSS Document */
+
+#myCanvas{
+	position:absolute;
+	left:0px;
+	top:0px;
+	-webkit-user-select:none;
+}
+
+#copyright{
+	position:absolute;
+	left:0px;
+	top:440px;
+	width:320px;
+	height:15px;
+	z-index:2;
+	font-size:9pt;
+	font-weight:bold;
+	color:#FFF;
+	text-align:right;
+}
